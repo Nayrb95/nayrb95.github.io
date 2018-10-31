@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:600,200|Great+Vibes);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border: 0 none;position: relative;}
+[class="fas"]:before {font-family: 'fontawesome', sans-serif;}
+
+html {
+  background: black;
+  width: 100%;
+  height: 100%;
+  font-family: dosis, sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+section {
+  background:url("image.png");
+  background-size: cover;
+  width: 80vw;
+  max-width: 40rem;
+  min-width: 390px;
+  height: 25rem;
+  margin: 4rem auto;
+  box-shadow: 0 0 70px rgba(0,0,0,.4);
+}
+#article1 {
+position: absolute;
+  left: 0;
+  top: 5rem;
+  background-image: linear-gradient(to right top, #2d72e2,#c5cddb);
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem 0;
+  overflow: auto;
+  transition: .3s;
+  transform: scale(0);
+  transform-origin: center;
+  font-size: 28px;
+}
+
+#article2 {
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  background-image: linear-gradient(to right top, #bf00c8,#32ff5e);
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem 0;
+  overflow: auto;
+  transition: .3s;
+  transform: scale(0);
+  transform-origin: center ;
+  font-size: 28px;
+
+}
+#article3 {
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  background-image: linear-gradient(to right top, #d32631,#fce625);
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem 0;
+  overflow: auto;
+  transition: .3s;
+  transform: scale(0);
+  transform-origin: center;
+  font-size: 28px;
+
+}
+#article4 {
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  background-image: linear-gradient(to right top, #2b388c,#0c1023);
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem 0;
+  overflow: auto;
+  transition: .3s;
+  transform: scale(0);
+  transform-origin: center;
+  font-size: 28px;
+  float: center-left;
+
+}
+#foto1 {
+	 float: right;
+}
+#foto2 {
+	 float: right;
+}
+#foto4 {
+	 float: ight;
+}
+#foto3 {
+	 float: right;
+}
+#foto4 {
+	 float: right;
+	 height: 197px;
+     width: 260px;
+
+}
+
+
+nav {
+  width: 100%;
+  background-color: #ff0400;
+  height: 5rem;
+  box-shadow: 0 0 6px rgba(0,0,0,.4);
+}
+nav:after {
+  content:'';
+  width: 25%;
+  height: 5rem;
+  background: #000000;
+  position: absolute;
+  transition: .2s;
+}
+
+input {
+  display: none;
+}
+#label1 {
+  width: 25%;
+  float: left;
+  color: #0563fc;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 2;
+  font-size: 54px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#label2 {
+  width: 25%;
+  float: left;
+  color: #34c968;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 2;
+    font-size: 54px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#label3 {
+  width: 25%;
+  float: left;
+  color: #ffd242;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 2;
+    font-size: 54px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#label4 {
+	
+  width: 25%;
+  float: left;
+  color: #333956;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 2;
+    font-size: 54px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+label:before {
+  display: block;
+  font-size: 3rem;
+  line-height: 5rem;
+  z-index: 2;
+}
+
+
+#camara:checked ~ nav [for='camara']{
+	color: #edeff2;
+	font-weight: 600;
+}
+#peli:checked ~ nav [for='peli']{
+	color: #e529e5;
+	font-weight: 600;
+}
+#posts:checked ~ nav [for='posts']{
+  color: #f20c0c;
+  font-weight: 600;
+}
+#tarefas:checked ~ nav [for='tarefas'] {
+  color: #edeff2;
+  font-weight: 600;
+}
+
+
+#camara:checked ~ nav:after {
+  left: 0;
+}
+#peli:checked ~ nav:after {
+  left:25%;
+  border-top: 0 none;
+}
+#posts:checked ~ nav:after {
+  left: 50%;
+}
+#tarefas:checked ~ nav:after {
+  left: 75%;
+}
+
+#camara:checked ~ .uno,
+#peli:checked ~ .dous,
+#posts:checked ~ .tres,
+#tarefas:checked ~ .catro {
+  display: block;
+  transform: scale(1);
+  transition-delay: .5s; 
+}
+a {color: rgba(0,0,0,.4)}
+a:hover {color: rgba(0,0,0,.2)}
