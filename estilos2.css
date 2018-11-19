@@ -33,9 +33,10 @@ li a{
 	display:block;
 }
 li a:hover{
-  background-color:#DC143C;
+  background-color:#00f028;
   color: black;
 }
 h4{
   color:white;
   text-align: center;
+}
